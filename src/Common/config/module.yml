@@ -1,0 +1,15 @@
+doctrine_mongodb:
+    document_managers:
+        default:
+            mappings:
+                Common: 
+                    dir: '%kernel.project_dir%/src/Common/Document'
+                    prefix: App\Common\Document
+                    type: 'annotation'
+                    is_bundle: false
+                
+twig:
+    paths:
+        '%kernel.project_dir%/src/Common/templates': 'Common'
+    globals:
+        'PRODUCT_NAME': '%env(PRODUCT_NAME)%'

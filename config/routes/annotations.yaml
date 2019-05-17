@@ -1,0 +1,4 @@
+## Moved to Kernel.php due to https://github.com/symfony/symfony/issues/22160
+#app_controllers:
+#    resource: '../../src/*/Controller/'
+#    type: annotation

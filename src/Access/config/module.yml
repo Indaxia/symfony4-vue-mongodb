@@ -1,0 +1,16 @@
+parameters:
+    'app.security.user_class': App\Access\Document\User
+
+doctrine_mongodb:
+    document_managers:
+        default:
+            mappings:
+                Access: 
+                    dir: '%kernel.project_dir%/src/Access/Document'
+                    prefix: App\Access\Document
+                    type: 'annotation'
+                    is_bundle: false
+                
+twig:
+    paths:
+        '%kernel.project_dir%/src/Access/templates': 'Access'

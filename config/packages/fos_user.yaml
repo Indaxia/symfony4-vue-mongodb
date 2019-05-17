@@ -1,0 +1,7 @@
+fos_user:
+    db_driver: mongodb
+    user_class: 'app.security.user_class'
+    firewall_name: main
+    from_email:
+        address: "%env(MAILER_EMAIL_FROM)%"
+        sender_name: "%env(PRODUCT_NAME)%"
